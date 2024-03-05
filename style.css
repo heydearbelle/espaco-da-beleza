@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
+  background-color: #fae5d0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  max-width: max-content;
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.text {
+  font-size: 25px;
+  color: #fff;
+}
+.introducao {
+  background: #ddb9e1;
+  padding: 40px;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+}
+
+.introducao h1 {
+  font-size: 40px;
+  color: darkorchid;
+}
+
+.introducao p {
+  font-size: 25px;
+  color: #fff;
+}
+
+.introducao::before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #fae5d0;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.subtitulo {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #000;
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+}
+
+.servicos {
+  background: #fae5d0;
+  padding: 40px;
+}
+
+.servicos-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  border-left: 4px solid transparent;
+}
+
+.servicos-item:nth-child(odd) {
+  background: #ddb9e1;
+}
+
+.servicos-item:hover {
+  border-color: darkorchid;
+}
+
+.servicos-item p {
+  grid-column: 2;
+}
+
+h3 {
+  font-size: 2rem;
+  color: darkorchid;
+}
+
+.rodape {
+  background: #ddb9e1;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
